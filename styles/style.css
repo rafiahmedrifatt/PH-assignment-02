@@ -5,8 +5,10 @@
   --primary-color-02: #01acfd;
   --primary-color-03: #05d4df;
   --primary-color-04: #5d58ef;
+  --primary-width: 73rem;
+  --primary-margin: 0 auto;
   --font-weight: 700;
-  --primary-width: ;
+  --font-size: 3rem;
 }
 * {
   margin: 0;
@@ -15,6 +17,16 @@
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
+}
+
+section,
+.footer-container {
+  width: var(--primary-width);
+  margin: var(--primary-margin);
+}
+
+p {
+  font-weight: 200;
 }
 
 /* Shared Style */
@@ -29,36 +41,168 @@
   border: none;
 }
 
+.secondary-button {
+  color: white;
+  background-color: black;
+  padding: 0.5rem 2rem;
+  border-radius: 8px;
+  border: none;
+  margin: 2rem 0;
+}
+
 /* Navbar related style */
 #navBar {
   justify-content: space-between;
+  align-items: center;
 }
 
 #navBar a {
   text-decoration: none;
+  margin: 0 1rem;
 }
 
 .logo {
   align-items: center;
 }
 
+#home {
+  color: var(--primary-color-01);
+}
+
+#about {
+  columns: var(--primary-color-02);
+}
+
+#facilities {
+  color: var(--primary-color-03);
+}
+
+#admission {
+  color: var(--primary-color-04);
+}
+
 /* BANNER RELATED STYLES */
 #banner {
   align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.banner-text {
+  width: 40rem;
+}
+.banner-text h1 {
+  font-size: var(--font-size);
+}
+
+#empowering {
+  color: var(--primary-color-01);
+}
+
+#vision {
+  color: var(--primary-color-02);
 }
 
 /* CURRICULUM RELETED STYLES */
 
+#curriculum {
+  background-image: url(/assets/bg.png);
+  text-align: center;
+  margin-top: 7rem;
+}
+
+#curriculum h1 {
+  font-size: var(--font-size);
+}
+
 .curriculum-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  margin-top: 3rem;
+}
+
+.curriculum-card {
+  /* border: 1px solid black; */
+  width: 22rem;
+  height: 25rem;
+  border-radius: 8px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  /* padding: 1rem; */
+}
+
+.card-1 {
+  background-image: linear-gradient(var(--primary-color-02), #ffffff, #ffffff);
+}
+
+.card-1 a {
+  text-decoration: none;
+  color: var(--primary-color-02);
+}
+
+.card-2 {
+  background-image: linear-gradient(var(--primary-color-01), #ffffff, #ffffff);
+}
+.card-2 a {
+  text-decoration: none;
+  color: var(--primary-color-01);
+}
+
+.card-3 {
+  background-image: linear-gradient(var(--primary-color-03), #ffffff, #ffffff);
+}
+.card-3 a {
+  text-decoration: none;
+  color: var(--primary-color-03);
+}
+
+.curriculum-card img {
+  padding: 2rem;
+}
+
+.curriculum-card > h3,
+p,
+a {
+  margin: 1rem 0;
+}
+
+.btn {
+  color: #ffff;
+  background-color: var(--primary-color-01);
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  margin: 2rem 0;
 }
 
 /* STORY RELETED STYLES */
 
+#story {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#story h1 {
+  font-size: var(--font-size);
+}
+
+.story-container {
+  background-image: url(/assets/bg.png),
+    linear-gradient(#fff, var(--primary-color-01));
+}
+
 .story-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+.story-card {
+  border-radius: 0.5rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  background-color: #fff;
+  text-align: justify;
+  padding: 1rem;
 }
 
 .story-1 {
@@ -69,6 +213,36 @@
 
 footer {
   background-color: var(--primary-color-02);
+  text-align: center;
+  color: white;
+}
+
+.footer-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  padding: 5rem 3rem;
+}
+
+.footer-anchor a {
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+
+@media screen and (max-width: 576px) {
+  #banner,
+  #navBar {
+    flex-direction: column-reverse;
+  }
+
+  footer,
+  .story-cards,
+  .curriculum-cards,
+  .footer-container,
+  #banner {
+    grid-template-columns: 1fr;
+  }
+  section {
+    width: 100vh;
+  }
 }
