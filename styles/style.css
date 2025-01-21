@@ -210,12 +210,78 @@ marquee {
   border-radius: 0.5rem;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   background-color: #fff;
-  text-align: justify;
   padding: 1rem;
+}
+.story-card img {
+  position: relative;
+}
+.story-date-01 {
+  color: white;
+  background-color: var(--primary-color-01);
+  width: 10rem;
+  height: auto;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  border: none;
+  position: relative;
+  z-index: 1;
+  top: -1.5rem;
+}
+.story-date-02 {
+  color: white;
+  background-color: var(--primary-color-02);
+  width: 10rem;
+  height: auto;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  border: none;
+  position: relative;
+  z-index: 1;
+  top: -1.5rem;
+}
+.story-date-03 {
+  color: white;
+  background-color: var(--primary-color-03);
+  width: 10rem;
+  height: auto;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  border: none;
+  position: relative;
+  z-index: 1;
+  top: -1.5rem;
+}
+.story-date-04 {
+  color: white;
+  background-color: var(--primary-color-04);
+  width: 10rem;
+  height: auto;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  border: none;
+  position: relative;
+  z-index: 1;
+  top: -1.5rem;
+}
+.story-date-05 {
+  color: white;
+  background-color: var(--primary-color-01);
+  width: 10rem;
+  height: auto;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  border: none;
+  position: relative;
+  z-index: 1;
+  top: -1.5rem;
 }
 
 .story-1 {
   grid-row: span 2;
+}
+
+.story-1 > img {
+  width: 100%;
 }
 
 /* FOOTER RELETED STYLES */
@@ -251,7 +317,7 @@ footer {
 
   #navBar {
     /* background-color: black; */
-    border-bottom: 2px solid var(--primary-color-01);
+    border-bottom: 3px solid var(--primary-color-01);
   }
 
   /* BANNER RELATED STYLES */
