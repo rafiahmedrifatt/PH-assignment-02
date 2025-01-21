@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+:root {
+  --primary-color-01: #fea301;
+  --primary-color-02: #01acfd;
+  --primary-color-03: #05d4df;
+  --primary-color-04: #5d58ef;
+  --font-weight: 700;
+  --primary-width: ;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Shared Style */
+.flex {
+  display: flex;
+}
+.primary-button {
+  color: white;
+  background-color: var(--primary-color-01);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Navbar related style */
+#navBar {
+  justify-content: space-between;
+}
+
+#navBar a {
+  text-decoration: none;
+}
+
+.logo {
+  align-items: center;
+}
+
+/* BANNER RELATED STYLES */
+#banner {
+  align-items: center;
+}
+
+/* CURRICULUM RELETED STYLES */
+
+.curriculum-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* STORY RELETED STYLES */
+
+.story-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.story-1 {
+  grid-row: span 2;
+}
+
+/* FOOTER RELETED STYLES */
+
+footer {
+  background-color: var(--primary-color-02);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
