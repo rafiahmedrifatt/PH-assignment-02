@@ -251,7 +251,7 @@ footer {
 
   #navBar {
     /* background-color: black; */
-    /* margin-bottom: 2px solid var(--primary-color-01); */
+    border-bottom: 2px solid var(--primary-color-01);
   }
 
   /* BANNER RELATED STYLES */
@@ -283,8 +283,9 @@ footer {
 
   /* STORY RELETED STYLES */
 
-  .story-card {
+  .story-cards {
     text-align: center;
+    margin: 0 auto;
   }
   .story-1 {
     display: none;
