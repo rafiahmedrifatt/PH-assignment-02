@@ -65,6 +65,11 @@ p {
   align-items: center;
 }
 
+.hamburger {
+  font-size: 3rem;
+  visibility: hidden;
+}
+
 #home {
   color: var(--primary-color-01);
 }
@@ -174,6 +179,10 @@ a {
   margin: 2rem 0;
 }
 
+marquee {
+  font-size: 2rem;
+}
+
 /* STORY RELETED STYLES */
 
 #story {
@@ -230,19 +239,73 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
-  #banner,
-  #navBar {
-    flex-direction: column-reverse;
+  /* NAV RELATED STYLES */
+  .navAnchor,
+  .navButton,
+  #school {
+    display: none;
+  }
+  .hamburger {
+    visibility: visible;
   }
 
-  footer,
-  .story-cards,
-  .curriculum-cards,
-  .footer-container,
-  #banner {
-    grid-template-columns: 1fr;
+  #navBar {
+    /* background-color: black; */
+    /* margin-bottom: 2px solid var(--primary-color-01); */
   }
-  section {
-    width: 100vh;
+
+  /* BANNER RELATED STYLES */
+  #banner,
+  .curriculum-cards,
+  .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .story-cards {
+    grid-template-columns: repeat(2, 11rem);
+  }
+  .story-card img {
+    width: 100%;
+  }
+  .banner-text {
+    width: 90%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .banner-img-container {
+    width: 90%;
+    height: auto;
+  }
+
+  .banner-img-container img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* STORY RELETED STYLES */
+
+  .story-card {
+    text-align: center;
+  }
+  .story-1 {
+    display: none;
+  }
+
+  /* CURRICULUM RELETED STYLES */
+
+  .curriculum-card {
+    /* border: 1px solid black; */
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    margin: 1rem 0;
+  }
+
+  /* FOOTER RELETED STYLES */
+  .footer-container div {
+    width: 90%;
+  }
+  section,
+  .footer-container {
+    width: 80%;
   }
 }
